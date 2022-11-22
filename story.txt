@@ -1,3 +1,9 @@
+
+==================
+some new line
+=================
+
+
 serhii@serhii-pc:~$ mkdir repo
 serhii@serhii-pc:~$ cd repo/
 serhii@serhii-pc:~/repo$ git init
