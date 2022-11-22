@@ -1,0 +1,86 @@
+serhii@serhii-pc:~$ mkdir repo
+serhii@serhii-pc:~$ cd repo/
+serhii@serhii-pc:~/repo$ git init
+Initialized empty Git repository in /home/serhii/repo/.git/
+serhii@serhii-pc:~/repo$ nano story.txt
+serhii@serhii-pc:~/repo$ nano shopping_list.txt
+serhii@serhii-pc:~/repo$ mkdir school
+serhii@serhii-pc:~/repo$ cd school/
+serhii@serhii-pc:~/repo/school$ touch tools.txt
+serhii@serhii-pc:~/repo/school$ cd ../
+serhii@serhii-pc:~/repo$ git add story.txt
+serhii@serhii-pc:~/repo$ git commit -m "story"
+[master (root-commit) 75f6daf] story
+ 1 file changed, 17 insertions(+)
+ create mode 100644 story.txt
+serhii@serhii-pc:~/repo$ git add shopping_list.txt
+serhii@serhii-pc:~/repo$ git commit -m "shopping_list"
+[master 628abe3] shopping_list
+ 1 file changed, 10 insertions(+)
+ create mode 100644 shopping_list.txt
+serhii@serhii-pc:~/repo$ git add school/
+serhii@serhii-pc:~/repo$ git commit -m "school"
+[master 922469d] school
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 school/tools.txt
+serhii@serhii-pc:~/repo$ git log
+commit 922469d6b0a835cd7d2bea244cabc1fafab2b016 (HEAD -> master)
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:14:33 2022 +0200
+
+    school
+
+commit 628abe3807a57babdd61768c4abfdad6cbd98eda
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:14:11 2022 +0200
+
+    shopping_list
+
+commit 75f6daffc3bb7708513807cf6f8127a63eee9569
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:13:16 2022 +0200
+
+    story
+serhii@serhii-pc:~/repo$ nano shopping_list.txt
+serhii@serhii-pc:~/repo$ git add -p shopping_list.txt
+diff --git a/shopping_list.txt b/shopping_list.txt
+index 0949f62..6dd01a0 100644
+--- a/shopping_list.txt
++++ b/shopping_list.txt
+@@ -8,3 +8,6 @@ item7
+ item8
+ item9
+ item10
++new item
++new item
++new item
+(1/1) Stage this hunk [y,n,q,a,d,e,?]? y
+
+serhii@serhii-pc:~/repo$ git commit -m "new shopping_list"
+[master 7c84497] new shopping_list
+ 1 file changed, 3 insertions(+)
+serhii@serhii-pc:~/repo$ git log
+commit 7c84497e2090b6df86ba672505427b57c02754cd (HEAD -> master)
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:17:46 2022 +0200
+
+    new shopping_list
+
+commit 922469d6b0a835cd7d2bea244cabc1fafab2b016
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:14:33 2022 +0200
+
+    school
+
+commit 628abe3807a57babdd61768c4abfdad6cbd98eda
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:14:11 2022 +0200
+
+    shopping_list
+
+commit 75f6daffc3bb7708513807cf6f8127a63eee9569
+Author: Serhii Didenko <srg.dd0@gmail.com>
+Date:   Tue Nov 15 14:13:16 2022 +0200
+
+    story
+serhii@serhii-pc:~/repo$
