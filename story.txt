@@ -83,10 +83,3 @@ Author: Serhii Didenko <srg.dd0@gmail.com>
 Date:   Tue Nov 15 14:14:11 2022 +0200
 
     shopping_list
-
-commit 75f6daffc3bb7708513807cf6f8127a63eee9569
-Author: Serhii Didenko <srg.dd0@gmail.com>
-Date:   Tue Nov 15 14:13:16 2022 +0200
-
-    story
-serhii@serhii-pc:~/repo$
